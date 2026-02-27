@@ -3,5 +3,7 @@ new file test1
 - line 2 : apple
 - line 3: orange
 - line 4
+- line 5--
+- line 7--
 - line 7
 - line 8
