@@ -1,0 +1,26 @@
+[
+    {
+        "stt": 1,
+        "username": "admin",
+        "password": "admin123",
+        "expected_result": "Đăng nhập thành công"
+    },
+    {
+        "stt": 2,
+        "username": "user",
+        "password": "user123",
+        "expected_result": "Đăng nhập thành công"
+    },
+    {
+        "stt": 3,
+        "username": "admin",
+        "password": "wrongpass",
+        "expected_result": "Sai mật khẩu"
+    },
+    {
+        "stt": 4,
+        "username": "NghiaTD11",
+        "password": "None",
+        "expected_result": "None"
+    }
+]

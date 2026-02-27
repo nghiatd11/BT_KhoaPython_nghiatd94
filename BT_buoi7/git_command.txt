@@ -1,0 +1,54 @@
+# git command
+https://www.sourcetreeapp.com/          #app giao diện GUI cho Git 
+git clone https://github.com/halan1999/Automation-Test-Project
+
+git status
+
+git add ten_file.txt
+
+git commit -m "with message or notes"
+git push
+
+git checkout branch_other1      #mở sang 1 branch khác ko phải main nhánh chính
+
+git pull        # kéo file cập nhật mới nhất về máy sau khi checkout sang nhánh mới để làm việc
+
+config---
+git config --global user.name "nghiatd11"
+git config --global user.email "nghiatran.eugene@gmail.com"
+
+$ git push -u origin Ten_feature        # khi push lần đầu tiền nên dùng cho branch
+
+Workflow chuẩn cho automation tester
+# tạo / sửa file
+git status
+git add .
+git commit -m "Add guide for new test setup"
+
+# lần đầu
+git push -u origin feature_1
+
+# các lần sau
+git push
+
+----- cách 2: tạo SSH key để kết nối github vs máy làm việc ( cty nào cũng dùng)
+1️⃣ Kiểm tra máy đã có SSH key chưa (NÊN LÀM TRƯỚC)
+Mở Git Bash, chạy:
+ls ~/.ssh
+Nếu thấy:
+id_rsa
+id_rsa.pub
+
+hoặc
+id_ed25519
+id_ed25519.pub
+👉 Đã có key → sang bước 4
+
+Nếu:
+No such file or directory
+👉 Chưa có → tạo mới
+
+2️⃣ Tạo SSH key (CHUẨN – DÙNG ED25519)
+Trong Git Bash, chạy:
+ssh-keygen -t ed25519 -C "your_email@gmail.com"
+Created directory '/c/Users/Emilia-tan/.ssh'  #Key đc save ở đường dẫn này
