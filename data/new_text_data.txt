@@ -2,6 +2,9 @@ new file test1
 - line 1: banana
 - line 2 : apple
 - line 3: 
+- line 4: orange
+- line 21
+- line 22
 - line 4
 - line 12 orange
 - line 13 
